@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"outDir": "dist",
+		"rootDir": "./",
+		"baseUrl": "src",
+		"jsx": "react",
+		"noImplicitAny": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"typeRoots": ["@types", "./node_modules/@types"],
+		"paths": {
+			"@domain/*": ["domain/*"],
+			"@application/*": ["application/*"],
+			"@infra/*": ["infra/*"],
+			"@presentation/*": ["presentation/*"],
+			"@main/*": ["main/*"]
+		}
+	}
+}
