@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "webpack serve --config ./webpack.dev.js --mode development",
-		"prebuild": "rimraf dist",
+		"prebuild": "rimraf build",
 		"build": "webpack --config webpack.prod.js  --mode production",
 		"start": "node server.js"
 	},
@@ -14,9 +14,12 @@
 		"url": "https://github.com/arturdonda/bondevet-ui"
 	},
 	"dependencies": {
+		"@ant-design/icons": "^5.0.1",
+		"antd": "^5.2.3",
 		"express": "^4.18.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-media": "^1.10.0",
 		"react-router-dom": "^6.8.2"
 	},
 	"devDependencies": {

@@ -44,12 +44,20 @@ const config = {
 				use: ['style-loader', 'css-loader'],
 			},
 			{
-				test: /\.(jpg|gif|png|svg|woff|woff2|eot|ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				test: /\.(svg|woff|woff2|eot|ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 				loader: 'url-loader',
 				options: {
 					name: 'assets/[name].[ext]',
 					limit: 50,
 				},
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
+				],
 			},
 		],
 	},
